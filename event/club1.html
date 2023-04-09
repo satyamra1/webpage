@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Photography project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #090606;
+    height: auto;
+}
+
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1), -30px 0px 40px rgba(0, 0, 0, 0.1)
+}
+
+#landing {
+    background: #eeadad;
+}
+
+#landing-text {
+    display: flex;
+    flex: 0 1 40vw;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 1rem;
+    font-style:bold;
+}
+
+#landing-text h2 {
+    color: #888;
+}
+
+#landing-image {
+    background: url(dristi.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 10px;
+    flex: 1 2 150vw;
+    margin: 0;
+
+}
+#landing-image2 {
+    background: url(abacus1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 500px;
+    flex: 0 1 100vw;
+    margin: 0;
+}
+#landing-image3 {
+    background: url(natraj.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 500px;
+    flex: 0 1 100vw;
+    margin: 0;
+}
+
+#landing-image4 {
+    background: url(gfg1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 500px;
+    flex: 1 2 100vw;
+    margin: 0;
+}
+#landing-image5 {
+    background: url(volley.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100px;
+    flex: 1 2 100vw;
+    margin: 0;
+}
+#landing-image6 {
+    background: url(cricket.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100px;
+    flex: 1 2 100vw;
+    margin: 0;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin: 2rem 0 0;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #f4f4f4;
+}
+
+#header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+#header h2 {
+    border-left: 1px dotted #fff;
+    border-right: 1px dotted #fff;
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+footer p a {
+    text-decoration: none;
+    color: red;
+}
+
+/*Screen Sizes 500px +*/
+
+@media(min-width: 31.25rem) {
+    #landing {
+        display: flex;
+        height: 100%;
+    }
+
+    #landing-text {
+        height: 100vh;
+    }
+
+    #landing-image {
+        height: 100vh;
+    }
+}
+.name:hover  {
+            transition: 0.5s;
+        transform: scale(1.2);
+    color: #090606;}
+
+@media(min-width: 43.75rem) {
+    .btn {
+        padding: 1rem 3rem;
+    }
+}
+a{
+    padding-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    display:inline-block;
+    color:rgb(243, 236, 236)
+}
+a:hover{
+   
+    padding-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    display:inline-block;
+    color: rgb(238, 237, 237);
+}
+.next{
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    display:inline-block;
+    color:rgb(241, 234, 234)
+}
+.next:hover{
+   text-align: right;
+   padding-top: 20px;
+   padding-left: 20px;
+   text-decoration: none;
+   display:inline-block;
+   color: rgb(241, 237, 237);}
+
+.footer{
+    color: #fff;
+
+}
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="previous">
+        
+        <a href="interface.html">&laquo;Previous</a>
+    </div>
+    <div class="Next">
+        
+        <a href="calender.html">Next&raquo;</a>
+    </div>
+
+    
+    <main>
+        <!--Landing Area-->
+        <div id="landing">
+            <div id="landing-text">
+                <div id="landing-text-inner">
+                    <h1>Dristi Club</h1>
+                    
+                    <a href="#images" class="btn" id="view-work">
+                       <li class="name">
+                        President name-Himanshu tyagi<br>
+                        Contact no.-987654321</li>
+                    </a>
+                </div>
+            </div>
+            <div id="landing-image"></div>
+        </div>
+        <div id="images">
+            <div id="header">
+                <h2></h2>
+            </div>
+
+        <!-- 2 -->
+            <div id="landing">
+                <div id="landing-text">
+                    <div id="landing-text-inner">
+                        <h1>Abacus Society</h1>
+                        
+                        <a href="#images" class="btn" id="view-work">
+                            <li class="name">
+                            President name- Harsh singh<br>
+                            Contact no.-987654321</li>
+                        </a>
+                    </div>
+                </div>
+                <div id="landing-image2"></div>
+            </div>
+            <div id="images">
+                <div id="header">
+                    <h2></h2>
+                </div>
+
+<!-- 3 -->
+
+                <div id="landing">
+                    <div id="landing-text">
+                        <div id="landing-text-inner">
+                            <h1>Natraj Club</h1>
+                            
+                            <a href="#images" class="btn" id="view-work">
+                                <li class="name">
+                                President name-Roshni srivastava<br>
+                                Contact no.-987654321</li>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="landing-image3"></div>
+                </div>
+                <div id="images">
+                    <div id="header">
+                        <h2></h2>
+                    </div>
+
+
+<!-- 4 -->
+                    <div id="landing">
+                        <div id="landing-text">
+                            <div id="landing-text-inner">
+                                <h1>GFG Club</h1>
+                                
+                                <a href="#images" class="btn" id="view-work">
+                                    <li class="name">
+                                    President name- Vaidik pandey<br>
+                                    Contact no.-987654321</li>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="landing-image4"></div>
+                    </div>
+                    <div id="images">
+                        <div id="header">
+                            <h2></h2>
+                        </div>
+<!-- 5 -->
+                        <div id="landing">
+                            <div id="landing-text">
+                                <div id="landing-text-inner">
+                                    <h1>Volleyball Club</h1>
+                                    
+                                    <a href="#images" class="btn" id="view-work">
+                                        <li class="name">
+                                        President name- Ayushman singh<br>
+                                        Contact no.-987654321</li>
+                                    </a>
+                                </div>
+                            </div>
+                            <div id="landing-image5"></div>
+                        </div>
+                        <div id="images">
+                            <div id="header">
+                                <h2></h2>
+                            </div>
+<!-- 6 -->
+                            <div id="landing">
+                                <div id="landing-text">
+                                    <div id="landing-text-inner">
+                                        <h1>Cricket Club</h1>
+                                        
+                                        <a href="#images" class="btn" id="view-work">
+                                            <li class="name">
+                                            President name-Satyam rai<br>
+                                            Contact no.-987654321</li>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="landing-image6"></div>
+                            </div>
+                            <div id="images">
+                                <div id="header">
+                                    <h2></h2>
+                                </div>
+
+         
+    </main>
+
+    <footer class="footer">
+
+        <h3>Get In Touch</h3>
+    
+        <p>Email: <strong>satyamrai200311@gmail.com</strong></p>
+        <p>Phone:
+            <a href="+3595555555">
+                <strong>(987456125)</strong>
+            </a>
+        </p>
+    </footer>
+
+</body>
+ 
+</html>
