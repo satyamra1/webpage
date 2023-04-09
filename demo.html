@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>// Get the search input element and the search results element
+        const searchInput = document.querySelector('#searchInput');
+        const searchResults = document.querySelector('#searchResults');
+        
+        // Function to handle the search
+        function handleSearch() {
+          // Get the search term from the input field
+          const searchTerm = searchInput.value;
+        
+          // Perform the search using your preferred method
+          // For example, you can use an API to fetch search results
+          // and display them in the search results element
+        
+          // Display the search results in the search results element
+          searchResults.innerHTML = `Search results for "${searchTerm}"`;
+        }
+        
+        // Add an event listener to the search input element
+        searchInput.addEventListener('input', handleSearch);
+        </script>
+</body>
+</html>
+
+<div class="rightNav">
+    <input type="text" name="search" id="search">
+    <button class="btn btn-sm">Search</button>
+</div>
+.img::before{
+    content: '';
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.4);
+  }<script type="text/tmpl" id="tmpl">
